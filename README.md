@@ -1,312 +1,333 @@
-# Tech and Path 🚀
+🚀 Tech and Path
+A comprehensive technology career guidance platform built with Next.js, TypeScript, and Supabase. Help professionals navigate their tech careers with expert-curated content, real-time market insights, and structured career roadmaps.
 
-A comprehensive technology career guidance platform built with Next.js, TypeScript, and Supabase. Help professionals navigate their tech career journey with expert-curated content, real-time market data, and proven career roadmaps.
+🌟 Features
+🔐 Authentication System
+Email/Password Authentication – Secure signup and login
 
-## 🌟 Features
+Google OAuth Integration – One-click social authentication
 
-### 🔐 Authentication System
-- **Email/Password Authentication** - Secure signup and login
-- **Google OAuth Integration** - One-click social authentication
-- **Email Verification** - Secure account confirmation process
-- **Protected Routes** - Dashboard and user-specific content
-- **Session Management** - Persistent login across browser sessions
+Email Verification – Account confirmation via email
 
-### 📊 Career Guidance
-- **10+ Technology Fields** - Comprehensive coverage of tech careers
-- **Detailed Field Analysis** - In-depth descriptions, skills, and requirements
-- **Salary Insights** - Real-time salary data across experience levels
-- **Learning Roadmaps** - Step-by-step career progression paths
-- **Job Role Breakdown** - 50+ detailed job positions and responsibilities
+Protected Routes – User-specific dashboards and content
 
-### 🎨 User Experience
-- **Responsive Design** - Works seamlessly on all devices
-- **Professional UI** - Clean, modern interface with smooth animations
-- **Advanced Search** - Find fields by skills, salary, or keywords
-- **Smart Filtering** - Filter by growth potential, salary range, and more
-- **Personalized Dashboard** - Track progress and get recommendations
+Session Management – Persistent login across sessions
 
-### 🛠️ Technical Features
-- **Next.js 14** - Latest React framework with App Router
-- **TypeScript** - Full type safety throughout the application
-- **Tailwind CSS** - Utility-first styling with custom components
-- **Supabase** - Backend-as-a-Service for authentication and data
-- **Shadcn/ui** - High-quality, accessible UI components
+📊 Career Guidance
+10+ Technology Fields – Comprehensive coverage
 
-## 🚀 Quick Start
+Detailed Field Analysis – Skills, requirements, and job paths
 
-### Prerequisites
-- Node.js 18+ 
-- npm or yarn
-- Supabase account
+Salary Insights – Real-time salary trends by experience
 
-### Installation
+Learning Roadmaps – Guided career progression paths
 
-1. **Clone the repository**
-   \`\`\`bash
-   git clone https://github.com/yourusername/tech-and-path.git
-   cd tech-and-path
-   \`\`\`
+Job Role Breakdown – 50+ roles with responsibilities
 
-2. **Install dependencies**
-   \`\`\`bash
-   npm install
-   # or
-   yarn install
-   \`\`\`
+🎨 User Experience
+Responsive Design – Optimized for all screen sizes
 
-3. **Set up environment variables**
-   \`\`\`bash
-   cp .env.example .env.local
-   \`\`\`
-   
-   Add your Supabase credentials:
-   \`\`\`env
-   NEXT_PUBLIC_SUPABASE_URL=your_supabase_project_url
-   NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
-   \`\`\`
+Modern UI – Clean, animated, and professional
 
-4. **Run the development server**
-   \`\`\`bash
-   npm run dev
-   # or
-   yarn dev
-   \`\`\`
+Advanced Search – Find careers by skill, salary, or keyword
 
-5. **Open your browser**
-   Navigate to [http://localhost:3000](http://localhost:3000)
+Smart Filters – Filter by salary, growth, etc.
 
-## 🔧 Configuration
+Personalized Dashboard – Track learning and recommendations
 
-### Supabase Setup
+🛠️ Technical Stack
+Next.js 14 – App Router support
 
-1. **Create a Supabase Project**
-   - Go to [supabase.com](https://supabase.com)
-   - Create a new project
-   - Copy your project URL and anon key
+TypeScript – Type-safe development
 
-2. **Configure Authentication**
-   - Go to Authentication → Settings
-   - Configure email settings
-   - Optionally disable email confirmation for development
+Tailwind CSS – Utility-first styling
 
-3. **Set up OAuth Providers (Optional)**
-   - Go to Authentication → Providers
-   - Enable Google OAuth
-   - Add your Google OAuth credentials
-   - Set redirect URL: \`your-domain.com/auth/callback\`
+Supabase – Backend and Auth service
 
-### Google OAuth Setup (Optional)
+shadcn/ui – Accessible and elegant UI components
 
-1. **Google Cloud Console**
-   - Go to [console.cloud.google.com](https://console.cloud.google.com)
-   - Create or select a project
-   - Enable Google+ API
+🚀 Quick Start
+Prerequisites
+Node.js v18+
 
-2. **Create OAuth Credentials**
-   - Go to APIs & Services → Credentials
-   - Create OAuth 2.0 Client ID
-   - Add authorized origins and redirect URIs
+npm or yarn
 
-3. **Configure in Supabase**
-   - Add Client ID and Secret to Supabase
-   - Set redirect URL: \`https://your-supabase-url.supabase.co/auth/v1/callback\`
+Supabase account
 
-## 📁 Project Structure
+Installation
+bash
+Copy
+Edit
+git clone https://github.com/yourusername/tech-and-path.git
+cd tech-and-path
+npm install
+# or
+yarn install
+Setup Environment Variables
+bash
+Copy
+Edit
+cp .env.example .env.local
+Update the environment file:
 
-\`\`\`
+env
+Copy
+Edit
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_project_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+Run the Development Server
+bash
+Copy
+Edit
+npm run dev
+# or
+yarn dev
+Visit: http://localhost:3000
+
+🔧 Supabase Configuration
+1. Create a Project
+Go to supabase.com
+
+Create a new project
+
+Copy the project URL and anon key
+
+2. Configure Authentication
+Navigate to Authentication → Settings
+
+Setup email settings
+
+Optional: Disable email confirmation for local development
+
+3. Enable Google OAuth (Optional)
+Go to Authentication → Providers
+
+Enable Google and set up credentials
+
+Redirect URL:
+
+arduino
+Copy
+Edit
+https://your-domain.com/auth/callback
+Google OAuth Setup Steps
+Go to Google Cloud Console
+
+Enable OAuth & Google+ API
+
+Create OAuth Client ID
+
+Add redirect URI:
+
+bash
+Copy
+Edit
+https://your-supabase-url.supabase.co/auth/v1/callback
+📁 Project Structure
+python
+Copy
+Edit
 tech-and-path/
-├── app/                          # Next.js App Router
+├── app/                          # Next.js App Router pages
 │   ├── about/                    # About page
-│   ├── auth/                     # Authentication callbacks
+│   ├── auth/                     # Auth routes
 │   ├── dashboard/                # User dashboard
-│   ├── features/                 # Features page
-│   ├── fields/[id]/             # Dynamic tech field pages
+│   ├── features/                 # Features overview
+│   ├── fields/[id]/              # Dynamic tech field pages
 │   ├── login/                    # Login page
-│   ├── search/                   # Search functionality
-│   ├── signup/                   # Registration page
-│   ├── tech-fields/             # Tech fields listing
-│   ├── globals.css              # Global styles
-│   ├── layout.tsx               # Root layout
-│   └── page.tsx                 # Homepage
-├── components/                   # Reusable components
-│   ├── ui/                      # UI components (shadcn/ui)
-│   ├── header.tsx               # Navigation header
-│   └── footer.tsx               # Site footer
-├── lib/                         # Utility libraries
-│   ├── auth-context.tsx         # Authentication context
-│   ├── supabase.ts              # Supabase client
-│   ├── tech-fields-data.ts      # Tech fields data
-│   └── utils.ts                 # Utility functions
-└── public/                      # Static assets
-\`\`\`
-
-## 🎯 Tech Fields Covered
-
-1. **Artificial Intelligence & Machine Learning** - ₹25.2 LPA
-2. **Data Science** - ₹19.8 LPA  
-3. **Product Management** - ₹22.1 LPA
-4. **Cybersecurity** - ₹18.7 LPA
-5. **Cloud Computing** - ₹17.5 LPA
-6. **Blockchain** - ₹16.2 LPA
-7. **Internet of Things (IoT)** - ₹15.8 LPA
-8. **UI/UX Design** - ₹14.3 LPA
-9. **Non-Coding Tech Jobs** - ₹13.5 LPA
-10. **Web Development** - ₹12.5 LPA
+│   ├── signup/                   # Signup page
+│   ├── search/                   # Search interface
+│   ├── tech-fields/              # Tech fields listing
+│   ├── layout.tsx                # Root layout
+│   ├── page.tsx                  # Homepage
+│   └── globals.css               # Global styles
+├── components/                   # Reusable UI components
+│   ├── ui/                       # shadcn/ui components
+│   ├── header.tsx                # Navbar
+│   └── footer.tsx                # Footer
+├── lib/                          # Utility functions and configs
+│   ├── auth-context.tsx          # Auth context provider
+│   ├── supabase.ts               # Supabase client
+│   ├── tech-fields-data.ts       # Static tech field data
+│   └── utils.ts                  # Helper functions
+└── public/                       # Static files
+🎯 Tech Fields Covered
+Field	Avg Salary (INR)
+Artificial Intelligence & ML	₹25.2 LPA
+Data Science	₹19.8 LPA
+Product Management	₹22.1 LPA
+Cybersecurity	₹18.7 LPA
+Cloud Computing	₹17.5 LPA
+Blockchain	₹16.2 LPA
+Internet of Things (IoT)	₹15.8 LPA
+UI/UX Design	₹14.3 LPA
+Non-Coding Tech Jobs	₹13.5 LPA
+Web Development	₹12.5 LPA
 
 Each field includes:
-- Detailed descriptions and career prospects
-- Required skills and technologies
-- Learning roadmaps and progression paths
-- Salary ranges across experience levels
-- Job roles and responsibilities
-- Market demand and growth projections
 
-## 🔒 Authentication Flow
+Career overview and trends
 
-### Email/Password Authentication
-1. User signs up with email and password
-2. Email verification sent (if enabled)
-3. User confirms email and can log in
-4. Session persisted across browser sessions
+Required skills and tools
 
-### Google OAuth Flow
-1. User clicks "Continue with Google"
-2. Redirected to Google authentication
-3. Google redirects back to \`/auth/callback\`
-4. Session created and user redirected to dashboard
+Roadmaps and resources
 
-### Protected Routes
-- \`/dashboard\` - Requires authentication
-- Automatic redirect to \`/login\` for unauthenticated users
-- Session state managed globally via React Context
+Salary insights
 
-## 🎨 UI Components
+Growth potential and demand
 
-Built with **shadcn/ui** components:
-- \`Button\` - Various button styles and states
-- \`Card\` - Content containers with headers
-- \`Input\` - Form input fields
-- \`Badge\` - Status and category indicators
-- \`Alert\` - Success/error message displays
-- \`Label\` - Form field labels
+🔐 Authentication Flow
+Email/Password
+Signup with email & password
 
-Custom components:
-- \`AnimatedCounter\` - Smooth number animations
-- \`LoadingSpinner\` - Loading state indicators
-- \`Header\` - Navigation with search and auth
-- \`Footer\` - Site footer with links
+Email verification (optional)
 
-## 📱 Responsive Design
+Log in and stay signed in with session persistence
 
-- **Mobile-first approach** - Optimized for all screen sizes
-- **Breakpoints**: sm (640px), md (768px), lg (1024px), xl (1280px)
-- **Flexible layouts** - Grid and flexbox for responsive content
-- **Touch-friendly** - Appropriate touch targets and interactions
+Google OAuth
+Click "Continue with Google"
 
-## 🚀 Deployment
+Redirect to Google login
 
-### Vercel (Recommended)
-1. **Connect Repository**
-   - Import project to Vercel
-   - Connect your GitHub repository
+Return to /auth/callback
 
-2. **Environment Variables**
-   - Add Supabase URL and anon key
-   - Configure any additional environment variables
+Authenticated and redirected to dashboard
 
-3. **Deploy**
-   - Automatic deployments on git push
-   - Preview deployments for pull requests
+Protected Routes
+/dashboard and other user pages
 
-### Other Platforms
-- **Netlify** - Static site deployment
-- **Railway** - Full-stack deployment
-- **DigitalOcean** - VPS deployment
+Auto-redirects unauthenticated users to /login
 
-## 🔧 Development
+Session managed via React Context
 
-### Available Scripts
-\`\`\`bash
-npm run dev          # Start development server
-npm run build        # Build for production
+🎨 UI Components
+Built with shadcn/ui and custom components:
+
+Reusable Components
+
+Button, Input, Badge, Card, Alert, Label
+
+Custom Components
+
+Header – Navbar with search and auth
+
+Footer – Links and footer layout
+
+AnimatedCounter – Number animation
+
+LoadingSpinner – Loading states
+
+📱 Responsive Design
+Mobile-first design
+
+Responsive layouts (flex/grid)
+
+Touch-friendly interactions
+
+Breakpoints: sm, md, lg, xl
+
+🚀 Deployment
+Deploy on Vercel (Recommended)
+Import GitHub repo to Vercel
+
+Add environment variables:
+
+NEXT_PUBLIC_SUPABASE_URL
+
+NEXT_PUBLIC_SUPABASE_ANON_KEY
+
+Deploy with each push
+
+Alternative Hosts
+Netlify – For static export
+
+Railway – For full-stack hosting
+
+DigitalOcean – Manual VPS
+
+🧪 Development & Scripts
+bash
+Copy
+Edit
+npm run dev          # Development
+npm run build        # Production build
 npm run start        # Start production server
-npm run lint         # Run ESLint
-npm run type-check   # Run TypeScript checks
-\`\`\`
+npm run lint         # Linting with ESLint
+npm run type-check   # TypeScript checks
+✅ Development Workflow
+Create a feature branch
 
-### Code Quality
-- **ESLint** - Code linting and formatting
-- **TypeScript** - Static type checking
-- **Prettier** - Code formatting (optional)
+Implement and test locally
 
-### Development Workflow
-1. Create feature branch from main
-2. Make changes and test locally
-3. Run linting and type checks
-4. Create pull request
-5. Deploy to preview environment
-6. Merge to main for production deployment
+Run lint and type-check
 
-## 🤝 Contributing
+Create a PR
 
-1. **Fork the repository**
-2. **Create a feature branch**
-   \`\`\`bash
-   git checkout -b feature/amazing-feature
-   \`\`\`
-3. **Commit your changes**
-   \`\`\`bash
-   git commit -m 'Add amazing feature'
-   \`\`\`
-4. **Push to the branch**
-   \`\`\`bash
-   git push origin feature/amazing-feature
-   \`\`\`
-5. **Open a Pull Request**
+Deploy preview on Vercel
 
-## 📄 License
+Merge to main
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+🤝 Contributing
+Fork the repo
 
-## 🙏 Acknowledgments
+Create a new branch
+git checkout -b feature/amazing-feature
 
-- **Next.js** - React framework for production
-- **Supabase** - Backend-as-a-Service platform
-- **Tailwind CSS** - Utility-first CSS framework
-- **shadcn/ui** - High-quality React components
-- **Lucide React** - Beautiful icon library
+Make your changes
+git commit -m 'Add amazing feature'
 
-## 📞 Support
+Push to GitHub
+git push origin feature/amazing-feature
 
-- **Email**: hello@techandpath.com
-- **Documentation**: [docs.techandpath.com](https://docs.techandpath.com)
-- **Issues**: [GitHub Issues](https://github.com/yourusername/tech-and-path/issues)
+Submit a Pull Request
 
-## 🗺️ Roadmap
+📄 License
+This project is licensed under the MIT License.
+See the LICENSE file for more information.
 
-### Phase 1 (Current)
-- ✅ Core authentication system
-- ✅ Tech fields database and pages
-- ✅ Search and filtering
-- ✅ Responsive design
-- ✅ User dashboard
+🙏 Acknowledgments
+Next.js – React Framework
 
-### Phase 2 (Upcoming)
-- 🔄 Career assessment quiz
-- 🔄 Learning progress tracking
-- 🔄 User favorites system
-- 🔄 Email notifications
-- 🔄 Advanced analytics
+Supabase – Backend services
 
-### Phase 3 (Future)
-- 📋 Job listings integration
-- 📋 Mentorship matching
-- 📋 Community features
-- 📋 Mobile app
-- 📋 API for third-party integrations
+Tailwind CSS – Modern styling
 
----
+shadcn/ui – High-quality components
 
-**Built with ❤️ by the Tech and Path team**
+Lucide Icons – Icon set for React
 
-*Empowering professionals to make informed career decisions in technology*
+🗺️ Roadmap
+✅ Phase 1 (Completed)
+Authentication (email & Google)
+
+Tech field database and dynamic pages
+
+Search and filtering
+
+Responsive dashboard
+
+🔜 Phase 2 (Upcoming)
+Career assessment quiz
+
+Progress tracking system
+
+User favorites
+
+Email alerts
+
+Dashboard analytics
+
+🧩 Phase 3 (Planned)
+Job listings integration
+
+Mentorship programs
+
+Community forums
+
+Mobile app (React Native)
+
+Public API access
+
+Made with ❤️ by the Tech and Path Team
+
+Empowering professionals to make informed tech career decisions.
