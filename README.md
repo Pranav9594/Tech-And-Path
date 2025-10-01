@@ -55,7 +55,3 @@ yarn install
 ---
 git clone https://github.com/yourusername/tech-and-path.git
 cd tech-and-path
-npm install
-# or
-yarn install
----
