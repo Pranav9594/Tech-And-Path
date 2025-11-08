@@ -1,4 +1,4 @@
-# 🚀 Tech and Path
+d# 🚀 Tech and Path
 ![Screenshot 2025-07-06 201124](https://github.com/user-attachments/assets/340f999a-be00-404d-a97f-b8fbc3ba7b57)
 
 A comprehensive technology career guidance platform built with **Next.js**, **TypeScript**, and **Supabase**. Help professionals navigate their tech careers with expert-curated content, real-time market insights, and structured career roadmaps.
