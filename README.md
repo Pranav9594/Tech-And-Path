@@ -1,208 +1,188 @@
-# 🚀 Tech and Path
-<img width="1890" height="898" alt="Screenshot 2026-06-08 184051" src="https://github.com/user-attachments/assets/f057c48e-4e8a-481f-8a15-3982663b8630" />
+# ✨ NIMO – Conversational AI Chatbot
+<img width="1445" height="831" alt="Screenshot 2025-12-08 232152" src="https://github.com/user-attachments/assets/0394c3d3-48bf-461f-a9db-eba53a2fa53d" />
 
-A comprehensive technology career guidance platform built with **Next.js**, **TypeScript**, and **Supabase**. Tech and Path helps students, aspiring professionals, and working professionals navigate their technology careers through expert-curated content, real-time market insights, salary trends, and structured learning roadmaps.
+### NIMO is a modern, feature-rich AI chatbot built with Next.js, React, Tailwind, and the Vercel AI SDK. It offers fast real-time conversations powered by Groq’s LLaMA 3.3 70B model, wrapped in a smooth and polished dark UI.
+
+### 🚀 Features
+⚡ Core
+- Real-time responses powered by LLaMA 3.3 70B
+- Streaming output
+- Markdown rendering
+- Syntax highlighting with code copy button
+---
+### 💬 Chat Management
+- Local chat history
+- Multiple sessions (up to 20)
+- Restore previous chats
+- Clear current chat with confirmation
+- Delete individual sessions
+---
+### 🪐 User Experience
+- Animated comet background
+- Typing indicator
+- Auto scrolling
+- Fully responsive
+- Dark theme
+---
+### 🛠 Tech Stack
+- Next.js 15 (App Router)
+- React 19
+- Tailwind CSS 4
+- Vercel AI SDK v5
+- Groq (LLaMA 3.3 70B)
+- shadcn/ui
+- react-markdown + remark-gfm
+- react-syntax-highlighter
+---
+Here’s a cleaner, more polished version of your project README section. It keeps everything simple, structured, and easy to follow.
 
 ---
 
-## 🌟 Features
+# 📦 Project Structure
 
-### 🔐 Authentication System
-
-* Email & Password Authentication
-* Google OAuth Integration
-* Email Verification
-* Protected Routes
-* Session Management
-* Secure User Authentication
-
-### 📊 Career Guidance
-
-* 10+ Technology Domains Covered
-* Detailed Career Field Analysis
-* Skills and Requirements Information
-* Real-Time Salary Insights
-* Structured Learning Roadmaps
-* 50+ Technology Job Role Descriptions
-* Industry Demand Analysis
-
-### 🎨 User Experience
-
-* Fully Responsive Design
-* Modern and Interactive UI
-* Advanced Search Functionality
-* Smart Filtering Options
-* Personalized User Dashboard
-* Learning Progress Tracking
+```
+├── app/
+│   ├── api/
+│   │   └── chat/
+│   │       └── route.ts
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── page.tsx
+│
+├── components/
+│   ├── ui/
+│   ├── chat-header.tsx
+│   ├── chat-input.tsx
+│   ├── chat-interface.tsx
+│   ├── chat-messages.tsx
+│   ├── comet-background.tsx
+│   ├── markdown-renderer.tsx
+│   ├── message-bubble.tsx
+│   ├── typing-indicator.tsx
+│   └── welcome-screen.tsx
+│
+└── README.md
+```
 
 ---
 
-## 🛠️ Tech Stack
+# ⚙️ Getting Started
 
-| Technology   | Purpose                    |
-| ------------ | -------------------------- |
-| Next.js 14   | Frontend Framework         |
-| TypeScript   | Type Safety                |
-| Tailwind CSS | Styling                    |
-| Supabase     | Database & Authentication  |
-| shadcn/ui    | UI Components              |
-| React        | User Interface Development |
+## 📌 Prerequisites
 
----
-
-## 🚀 Quick Start
-
-### Prerequisites
-
-Before getting started, ensure you have:
-
-* Node.js v18 or later
-* npm or yarn
-* Supabase Account
+* Node.js 18 or higher
+* npm, yarn, or pnpm
 
 ---
 
 ## 📥 Installation
 
-### 1. Clone the Repository
+Clone the repository:
 
-```bash
-git clone https://github.com/yourusername/tech-and-path.git
-cd tech-and-path
+```
+git clone https://github.com/yourusername/nimo-chatbot.git
+cd nimo-chatbot
 ```
 
-### 2. Install Dependencies
+Install dependencies:
 
-Using npm:
-
-```bash
+```
 npm install
 ```
 
-Or using yarn:
+or
 
-```bash
+```
 yarn install
 ```
 
-### 3. Configure Environment Variables
+or
 
-Create a `.env.local` file in the project root:
-
-```env
-NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
-NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+```
+pnpm install
 ```
 
-### 4. Run the Development Server
+Add your environment variable in `.env`:
 
-Using npm:
+```
+GROQ_API_KEY=your_groq_api_key_here
+```
 
-```bash
+Start the development server:
+
+```
 npm run dev
 ```
 
-Or using yarn:
+Open the app in your browser:
+[http://localhost:3000](http://localhost:3000)
 
-```bash
-yarn dev
+---
+
+# 🔑 Environment Variables
+
+| Variable     | Description  | Required |
+| ------------ | ------------ | -------- |
+| GROQ_API_KEY | Groq API key | Yes      |
+
+---
+
+# 📡 API Reference
+
+### **POST** `/api/chat`
+
+Handles streaming chat messages.
+
+Example request:
+
+```json
+{
+  "messages": [
+    {
+      "role": "user",
+      "parts": [{ "type": "text", "text": "Hello!" }]
+    }
+  ]
+}
 ```
 
-### 5. Open in Browser
+---
 
-```text
-http://localhost:3000
+# 🎯 Customization
+
+## 🤖 Change the AI Model
+
+In `route.ts`:
+
+```ts
+model: groq("llama-3.3-70b-versatile")
+```
+
+## 📝 Edit the System Prompt
+
+Inside your API route:
+
+```ts
+const SYSTEM_PROMPT = `
+You are NIMO, a friendly and helpful AI assistant...
+`
+```
+
+## 🎨 Theme Customization
+
+Modify global theme variables:
+
+```css
+:root {
+  --primary: 174 60% 45%;
+  --background: 220 20% 10%;
+}
 ```
 
 ---
 
-## 💻 Technology Fields Covered
+# 📄 License
 
-* Web Development
-* Mobile Development
-* Cloud Computing
-* Cybersecurity
-* Data Science
-* Artificial Intelligence
-* Machine Learning
-* DevOps
-* Blockchain
-* UI/UX Design
-
----
-
-## 📈 Career Insights
-
-* Salary Trends
-* Market Demand Analysis
-* Required Skills
-* Growth Opportunities
-* Industry Recommendations
-
----
-
-## 🛣️ Learning Roadmaps
-
-* Beginner Level Guidance
-* Intermediate Learning Path
-* Advanced Career Roadmap
-* Certification Recommendations
-* Project-Based Learning
-
----
-
-## 🔒 Authentication Features
-
-* Secure User Registration
-* Login and Logout
-* Google Sign-In
-* Email Verification
-* Session Persistence
-* Protected Dashboard Access
-
----
-
-## 🎯 Future Enhancements
-
-* AI-Powered Career Recommendations
-* Resume Analyzer
-* Mock Interview Platform
-* Job Portal Integration
-* Certification Tracker
-* Community Discussion Forum
-* Personalized Learning Plans
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome!
-
-1. Fork the repository
-2. Create a feature branch
-
-```bash
-git checkout -b feature-name
-```
-
-3. Commit your changes
-
-```bash
-git commit -m "Add new feature"
-```
-
-4. Push to GitHub
-
-```bash
-git push origin feature-name
-```
-
-5. Open a Pull Request
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License.
+This project is open-source and available under the MIT License.
 
 ---
