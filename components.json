@@ -1,10 +1,10 @@
 {
   "$schema": "https://ui.shadcn.com/schema.json",
-  "style": "new-york",
+  "style": "default",
   "rsc": true,
   "tsx": true,
   "tailwind": {
-    "config": "",
+    "config": "tailwind.config.ts",
     "css": "app/globals.css",
     "baseColor": "neutral",
     "cssVariables": true,
@@ -19,3 +19,10 @@
   },
   "iconLibrary": "lucide"
 }
+
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Pranav9594/Tech-And-Path.git
+git push -u origin main

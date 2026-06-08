@@ -1,196 +1,57 @@
-# ✨ NIMO – Conversational AI Chatbot
-<img width="1445" height="831" alt="Screenshot 2025-12-08 232152" src="https://github.com/user-attachments/assets/0394c3d3-48bf-461f-a9db-eba53a2fa53d" />
+## 🚀 Tech and Path
+![Screenshot 2025-07-06 201124](https://github.com/user-attachments/assets/340f999a-be00-404d-a97f-b8fbc3ba7b57)
 
-### NIMO is a modern, feature-rich AI chatbot built with Next.js, React, Tailwind, and the Vercel AI SDK. It offers fast real-time conversations powered by Groq’s LLaMA 3.3 70B model, wrapped in a smooth and polished dark UI.
-
-### 🚀 Features
-⚡ Core
-- Real-time responses powered by LLaMA 3.3 70B
-- Streaming output
-- Markdown rendering
-- Syntax highlighting with code copy button
----
-### 💬 Chat Management
-- Local chat history
-- Multiple sessions (up to 20)
-- Restore previous chats
-- Clear current chat with confirmation
-- Delete individual sessions
----
-### 🪐 User Experience
-- Animated comet background
-- Typing indicator
-- Auto scrolling
-- Fully responsive
-- Dark theme
----
-### 🛠 Tech Stack
-- Next.js 15 (App Router)
-- React 19
-- Tailwind CSS 4
-- Vercel AI SDK v5
-- Groq (LLaMA 3.3 70B)
-- shadcn/ui
-- react-markdown + remark-gfm
-- react-syntax-highlighter
----
-Here’s a cleaner, more polished version of your project README section. It keeps everything simple, structured, and easy to follow.
+A comprehensive technology career guidance platform built with **Next.js**, **TypeScript**, and **Supabase**. Help professionals navigate their tech careers with expert-curated content, real-time market insights, and structured career roadmaps.
 
 ---
 
-# 📦 Project Structure
+## 🌟 Features
 
-```
-├── app/
-│   ├── api/
-│   │   └── chat/
-│   │       └── route.ts
-│   ├── globals.css
-│   ├── layout.tsx
-│   └── page.tsx
-│
-├── components/
-│   ├── ui/
-│   ├── chat-header.tsx
-│   ├── chat-input.tsx
-│   ├── chat-interface.tsx
-│   ├── chat-messages.tsx
-│   ├── comet-background.tsx
-│   ├── markdown-renderer.tsx
-│   ├── message-bubble.tsx
-│   ├── typing-indicator.tsx
-│   └── welcome-screen.tsx
-│
-└── README.md
-```
+### 🔐 Authentication System
+- Email/Password Authentication – Secure signup and login  
+- Google OAuth Integration – One-click social login  
+- Email Verification – Confirm user email  
+- Protected Routes – Private dashboards and pages  
+- Session Management – Persistent login across sessions  
 
----
+### 📊 Career Guidance
+- 10+ Technology Fields – In-depth coverage  
+- Detailed Field Analysis – Skills, requirements, and job roles  
+- Salary Insights – Real-time salary trends  
+- Learning Roadmaps – Structured learning paths  
+- Job Role Breakdown – 50+ tech job descriptions  
 
-# ⚙️ Getting Started
+### 🎨 User Experience
+- Responsive Design – Mobile and desktop friendly  
+- Modern UI – Clean and interactive interface  
+- Advanced Search – Find by skill, salary, or keyword  
+- Smart Filters – Filter by salary, demand, etc.  
+- Personalized Dashboard – Track learning progress  
 
-## 📌 Prerequisites
-
-* Node.js 18 or higher
-* npm, yarn, or pnpm
+### 🛠️ Technical Stack
+- Next.js 14 – App Router support  
+- TypeScript – Strongly typed codebase  
+- Tailwind CSS – Utility-first CSS  
+- Supabase – Authentication and database  
+- shadcn/ui – Modern UI components  
 
 ---
 
-## 📥 Installation
+## 🚀 Quick Start
 
-Clone the repository:
+### Prerequisites
+- Node.js v18+  
+- npm or yarn  
+- Supabase account  
 
-```
-git clone https://github.com/Pranav9594/NIMO-CHATBOT.git
-cd NIMO-CHATBOT
-```
+### Installation
 
-Install dependencies:
-
-```
+```bash
+git clone https://github.com/yourusername/tech-and-path.git
+cd tech-and-path
 npm install
-```
-
-or
-
-```
+# or
 yarn install
-```
-
-or
-
-```
-pnpm install
-```
-
-Add your environment variable in `.env`:
-
-```
-GROQ_API_KEY=your_groq_api_key_here
-```
-
-Start the development server:
-
-```
-npm run dev
-```
-
-Open the app in your browser:
-[http://localhost:3000](http://localhost:3000)
-
 ---
-
-# 🔑 Environment Variables
-
-| Variable     | Description  | Required |
-| ------------ | ------------ | -------- |
-| GROQ_API_KEY | Groq API key | Yes      |
-
----
-
-# 📡 API Reference
-
-### **POST** `/api/chat`
-
-Handles streaming chat messages.
-
-Example request:
-
-```json
-{
-  "messages": [
-    {
-      "role": "user",
-      "parts": [{ "type": "text", "text": "Hello!" }]
-    }
-  ]
-}
-```
-
----
-
-# 🎯 Customization
-
-## 🤖 Change the AI Model
-
-In `route.ts`:
-
-```ts
-model: groq("llama-3.3-70b-versatile")
-```
-
-## 📝 Edit the System Prompt
-
-Inside your API route:
-
-```ts
-const SYSTEM_PROMPT = `
-You are NIMO, a friendly and helpful AI assistant...
-`
-```
-
-## 🎨 Theme Customization
-
-Modify global theme variables:
-
-```css
-:root {
-  --primary: 174 60% 45%;
-  --background: 220 20% 10%;
-}
-```
-
----
-
-# 🤝 Contributing
-
-Pull requests are welcome! Feel free to open an issue or submit a PR.
-
----
-
-# 📄 License
-
-This project is open-source and available under the MIT License.
-
----
-
-> Built with ❤️ by [Pranav](https://github.com/Pranav9594)
+git clone https://github.com/yourusername/tech-and-path.git
+cd tech-and-path
