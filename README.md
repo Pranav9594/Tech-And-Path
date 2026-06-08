@@ -206,5 +206,3 @@ git push origin feature-name
 This project is licensed under the MIT License.
 
 ---
-
-### ⭐ If you find this project useful, don't forget to star the repository!
