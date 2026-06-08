@@ -1,56 +1,60 @@
-## 🚀 Tech and Path
-![Screenshot 2025-07-06 201124](https://github.com/user-attachments/assets/340f999a-be00-404d-a97f-b8fbc3ba7b57)
+# Tech & Path
 
-A comprehensive technology career guidance platform built with **Next.js**, **TypeScript**, and **Supabase**. Help professionals navigate their tech careers with expert-curated content, real-time market insights, and structured career roadmaps.
+A Next.js, TypeScript, and Supabase project for technology career guidance.
 
----
+## Quick Start
 
-## 🌟 Features
+Prerequisites:
+- Node.js v18+ recommended
+- pnpm recommended, or npm/yarn
+- Supabase account if you are using auth/database features
 
-### 🔐 Authentication System
-- Email/Password Authentication – Secure signup and login  
-- Email Verification – Confirm user email  
-- Protected Routes – Private dashboards and pages  
-- Session Management – Persistent login across sessions  
-
-### 📊 Career Guidance
-- 10+ Technology Fields – In-depth coverage  
-- Detailed Field Analysis – Skills, requirements, and job roles  
-- Salary Insights – Real-time salary trends  
-- Learning Roadmaps – Structured learning paths  
-- Job Role Breakdown – 50+ tech job descriptions  
-
-### 🎨 User Experience
-- Responsive Design – Mobile and desktop friendly  
-- Modern UI – Clean and interactive interface  
-- Advanced Search – Find by skill, salary, or keyword  
-- Smart Filters – Filter by salary, demand, etc.  
-- Personalized Dashboard – Track learning progress  
-
-### 🛠️ Technical Stack
-- Next.js 14 – App Router support  
-- TypeScript – Strongly typed codebase  
-- Tailwind CSS – Utility-first CSS  
-- Supabase – Authentication and database  
-- shadcn/ui – Modern UI components  
-
----
-
-## 🚀 Quick Start
-
-### Prerequisites
-- Node.js v18+  
-- npm or yarn  
-- Supabase account  
-
-### Installation
+Install dependencies:
 
 ```bash
-git clone https://github.com/yourusername/tech-and-path.git
-cd tech-and-path
-npm install
-# or
-yarn install
----
-git clone https://github.com/yourusername/tech-and-path.git
-cd tech-and-path
+pnpm install
+```
+
+Run the dev server:
+
+```bash
+pnpm run dev
+```
+
+Build and start production:
+
+```bash
+pnpm run build
+pnpm run start
+```
+
+## Useful Commands
+
+- Check outdated packages: `pnpm outdated --json`
+- Update safe/wanted versions: `pnpm up`
+- Update to latest versions: `pnpm up --latest`
+- Search for symbol references: `node scripts/find-references.js`
+
+## Notes
+
+- Avoid `latest` in `package.json` when possible so installs stay reproducible.
+- Major dependency upgrades can break imports or runtime behavior, so test after updating.
+
+## Unused File Analysis
+
+I scanned the repository with `ts-prune` and a repository-wide reference search. The following files or exports appear unused and are good candidates for review before deleting:
+
+- `components/ui/cyber-elements.tsx`
+- `components/ui/floating-elements.tsx`
+- `components/ui/loading-spinner.tsx`
+- `components/ui/matrix-rain.tsx`
+- `components/ui/toaster.tsx`
+- `lib/supabase.ts` - exported `getCurrentUser` appears unused
+
+## Safe Removal Workflow
+
+1. Create a branch.
+2. Double-check references with `node scripts/find-references.js`.
+3. Remove the file or export.
+4. Run `pnpm run dev` and test the affected pages.
+5. Push the branch and open a pull request.
