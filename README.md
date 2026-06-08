@@ -80,8 +80,8 @@ Here’s a cleaner, more polished version of your project README section. It kee
 Clone the repository:
 
 ```
-git clone https://github.com/yourusername/nimo-chatbot.git
-cd nimo-chatbot
+git clone https://github.com/Pranav9594/NIMO-CHATBOT.git
+cd NIMO-CHATBOT
 ```
 
 Install dependencies:
@@ -181,8 +181,16 @@ Modify global theme variables:
 
 ---
 
+# 🤝 Contributing
+
+Pull requests are welcome! Feel free to open an issue or submit a PR.
+
+---
+
 # 📄 License
 
 This project is open-source and available under the MIT License.
 
 ---
+
+> Built with ❤️ by [Pranav](https://github.com/Pranav9594)
